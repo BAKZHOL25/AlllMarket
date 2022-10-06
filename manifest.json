@@ -1,0 +1,31 @@
+{
+"theme_color": "#ff0404",
+"background_color": "#f6f535",
+"display": "fullscreen",
+"start_url": "https://xfit-narxoz.github.io/",
+"name": "X-Fit",
+"short_name": "xfit",
+"description": "\u0411\u0443\u0434\u044c \u0441\u0438\u043b\u044c\u043d\u0435\u0435 \u0432\u0441\u0435\u0445!",
+"icons": [
+    {
+        "src": "/images/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+]
+}

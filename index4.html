@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page4</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header_burger">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Бастапқы бет</a></li>
+                    <li><a class="menu__item" href="index2.html">Дәреже тандау</a></li>
+                    <li><a class="menu__item" href="index3.html">1-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index4.html">2-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index5.html">3-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index6.html">Байланыс жолдары</a></li>
+                </ul>
+              </div>
+        </div>
+        <p>
+            ТЫ СЕЙЧАС
+            <span class="connectivity-status"></span>.
+        </p>
+        <div class="header_logo">
+            <img src="images/icon-192x192.png" alt="logo" class="logo">
+        </div>
+    </header>
+<div class="modal_okno">
+    <div class="modal_top">
+        <img src="images/3.jpg" alt="" class="modal-img">
+        <img src="images/2.jpg" alt="" class="modal-img">
+        <img src="images/1.jpg" alt="" class="modal-img">
+    </div>
+    <div class="modal_bottom">
+
+    <p class="p4">AAAAAA</p>
+        
+    <p class="p5">AAAAAA</p>
+    
+    <p class="p6">AAAAAA</p>
+    </div>
+</div>
+    
+
+    <main class="main main3 ">
+        <h1 class="title "> 2-ші Дәреже</h1>
+        <section class="page3 page_all">
+            <div class="page3_first first">
+                <a href="#" class="page3_link link" id="1" data-num="1" >1</a>
+                <a href="#" class="page3_link link" id="2" data-num="2" >2</a>
+                <a href="#" class="page3_link link" id="3" data-num="3" >3</a>
+                <a href="#" class="page3_link link" id="4" data-num="4" >4</a>
+                <a href="#" class="page3_link link" id="5" data-num="5" >5</a>
+                <a href="#" class="page3_link link" id="6" data-num="6" >6</a>
+                <a href="#" class="page3_link link" id="7" data-num="7" >7</a>
+                <a href="#" class="page3_link link" id="8" data-num="8" >8</a>
+                <a href="#" class="page3_link link" id="9" data-num="9" >9</a>
+                <a href="#" class="page3_link link" id="10" data-num="10" >10</a>
+            </div>
+            <div class="page5_second second">
+                <a href="#" class="page3_link link" id="11" data-num="11" >11</a>
+                <a href="#" class="page3_link link" id="12" data-num="12" >12</a>
+                <a href="#" class="page3_link link" id="13" data-num="13" >13</a>
+                <a href="#" class="page3_link link" id="14" data-num="14" >14</a>
+                <a href="#" class="page3_link link" id="15" data-num="15" >15</a>
+                <a href="#" class="page3_link link" id="16" data-num="16" >16</a>
+                <a href="#" class="page3_link link" id="17" data-num="17" >17</a>
+                <a href="#" class="page3_link link" id="18" data-num="18" >18</a>
+                <a href="#" class="page3_link link" id="19" data-num="19" >19</a>
+                <a href="#" class="page3_link link" id="20" data-num="20" >20</a>
+            </div>
+            <div class="page5_third third">
+                <a href="#" class="page3_link link" id="21" data-num="21" >21</a>
+                <a href="#" class="page3_link link" id="22" data-num="22" >22</a>
+                <a href="#" class="page3_link link" id="23" data-num="23" >23</a>
+                <a href="#" class="page3_link link" id="24" data-num="24" >24</a>
+                <a href="#" class="page3_link link" id="25" data-num="25" >25</a>
+                <a href="#" class="page3_link link" id="26" data-num="26" >26</a>
+                <a href="#" class="page3_link link" id="27" data-num="27" >27</a>
+                <a href="#" class="page3_link link" id="28" data-num="28" >28</a>
+                <a href="#" class="page3_link link" id="29" data-num="29" >29</a>
+                <a href="#" class="page3_link link" id="30" data-num="30" >30</a>
+            </div>
+        </section>
+
+        <div class="xdays">
+            <p class="xday">30 күн қалды </p>
+            <p class="yday">0 күн өтті </p>
+        </div>
+    </main>
+    
+    <script src="jquery.js"></script>
+    <script>
+
+        console.log('dddddddd');
+        const connectivityStatus = document.querySelector(
+            '.connectivity-status'
+        );
+
+        console.log(connectivityStatus);
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () =>
+                navigator.serviceWorker.register('serviceWorker.js')
+            );
+        }
+
+        if(navigator.onLine) {
+            connectivityStatus.classList.add('online');
+            connectivityStatus.classList.remove('offline');
+            connectivityStatus.innerText = 'online';
+        } else {
+            connectivityStatus.classList.add('offline');
+            connectivityStatus.classList.remove('online');
+            connectivityStatus.innerText = 'offline';
+        }
+       console.log("navigator.online", navigator.onLine);
+    </script>
+
+<script src="app.js"></script>
+</body>
+</html>

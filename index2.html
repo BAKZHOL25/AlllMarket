@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header_burger">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Бастапқы бет</a></li>
+                    <li><a class="menu__item" href="index2.html">Дәреже тандау</a></li>
+                    <li><a class="menu__item" href="index3.html">1-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index4.html">2-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index5.html">3-ші Дәреже</a></li>
+                  <li><a class="menu__item" href="index6.html">Байланыс жолдары</a></li>
+                </ul>
+              </div>
+        </div>
+        <p>
+            ТЫ СЕЙЧАС
+            <span class="connectivity-status"></span>.
+        </p>
+        <div class="header_logo">
+            <img src="images/icon-192x192.png" alt="logo" class="logo">
+        </div>
+    </header>
+
+    <main class="main main2">
+        <h1 class="page2_title title">Дәрежені таңдаңыз</h1>
+        <section class="page2_select">
+            <a href="index3.html" class="page2_link">1</a>
+            <a href="index4.html" class="page2_link">2</a>
+            <a href="index5.html" class="page2_link">3</a>
+        </section>
+    </main>
+    
+
+    <script src="jquery.js"></script>
+    <script>
+
+        console.log('dddddddd');
+        const connectivityStatus = document.querySelector(
+            '.connectivity-status'
+        );
+
+        console.log(connectivityStatus);
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () =>
+                navigator.serviceWorker.register('serviceWorker.js')
+            );
+        }
+
+        if(navigator.onLine) {
+            connectivityStatus.classList.add('online');
+            connectivityStatus.classList.remove('offline');
+            connectivityStatus.innerText = 'online';
+        } else {
+            connectivityStatus.classList.add('offline');
+            connectivityStatus.classList.remove('online');
+            connectivityStatus.innerText = 'offline';
+        }
+       console.log("navigator.online", navigator.onLine);
+    </script>
+
+<script src="app.js"></script>
+</body>
+</html>
