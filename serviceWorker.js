@@ -1,4 +1,4 @@
-const cacheName = 'xfit-narxoz';
+const cacheName = 'AllMarket-narxoz';
 const cacheVersion = `${cacheName}::1.0.1`;
 
 const cachedFiles = ['/', '/css/styles.css'];
