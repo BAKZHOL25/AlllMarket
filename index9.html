@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    <meta name="theme-color" content="#3E82F7" />
+    <meta name="description" content="x-fit Будь сильнее" />
+    <title>AllMarket</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header_burger">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">1</a></li>
+                    <li><a class="menu__item" href="index2.html">2</a></li>
+                    <li><a class="menu__item" href="index3.html">3</a></li>
+                  <li><a class="menu__item" href="index4.html">4</a></li>
+                  <li><a class="menu__item" href="index5.html">5</a></li>
+                  <li><a class="menu__item" href="index6.html">6</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Корзина</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="">Бастапқы бет</a></p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Cart Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-8 table-responsive mb-5">
+                <table class="table table-bordered text-center mb-0">
+                    <thead class="bg-secondary text-dark">
+                        <tr>
+                            <th>Тауар</th>
+                            <th>Құны</th>
+                            <th>Саны</th>
+                            <th>Жалпы құны</th>
+                            <th>Өшіру</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td class="align-middle"><img src="img/product-2.jpg" alt="" style="width: 50px;"> Colorful Stylish Shirt</td>
+                            <td class="align-middle">15000тг</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">15000тг</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/product-3.jpg" alt="" style="width: 50px;"> Colorful Stylish Shirt</td>
+                            <td class="align-middle">15000тг</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">15000тг</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <form class="mb-5" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-4" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary">Қосу</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card border-secondary mb-5">
+                    <div class="card-header bg-secondary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Корзинаның жалпы құны</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3 pt-1">
+                            <h6 class="font-weight-medium">Тауардың бағасы</h6>
+                            <h6 class="font-weight-medium">30000тг</h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-medium">Жол ақысы</h6>
+                            <h6 class="font-weight-medium">1000тг</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer border-secondary bg-transparent">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5 class="font-weight-bold">Жалпы баға</h5>
+                            <h5 class="font-weight-bold">31000тг</h5>
+                        </div>
+                        <p class="btn btn-block btn-primary my-3 py-3"><a href="index10.html">Төлем жасау</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+
+        console.log('dddddddd');
+        const connectivityStatus = document.querySelector(
+            '.connectivity-status'
+        );
+
+        console.log(connectivityStatus);
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () =>
+                navigator.serviceWorker.register('serviceWorker.js')
+            );
+        }
+
+        if(navigator.onLine) {
+            connectivityStatus.classList.add('online');
+            connectivityStatus.classList.remove('offline');
+            connectivityStatus.innerText = 'online';
+        } else {
+            connectivityStatus.classList.add('offline');
+            connectivityStatus.classList.remove('online');
+            connectivityStatus.innerText = 'offline';
+        }
+       console.log("navigator.online", navigator.onLine);
+    </script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
